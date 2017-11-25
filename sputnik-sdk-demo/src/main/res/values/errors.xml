@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Error descrition for fragment_error.html -->
+    <string name="ERR_HEADING">We failed to launch Sputnik for you</string>
+    <string name="ERR_LOADING_LIBS_FAILED">Failed to load Sputnik system libraries</string>
+	<string name="ERR_STORAGE_NOT_AVAILABLE">SD card on your device is not available</string>
+	<string name="ERR_STORAGE_NOT_WRITABLE">Your SD card is not writable</string>
+	<string name="ERR_STORAGE_NO_SPACE">Your SD card should have at least 50MB of free space</string>
+	<string name="ERR_WRITING_FAILED">An error occurred while storing data on your SD card</string>
+	<string name="ERR_SERVER_START_FAILED">An error occurred while we were starting Sputnik on your device</string>
+	<string name="ERR_SYSTEM_TEST_FAILED">Your system architecture is incompatible with this version of Sputnik</string>
+	
+	<!-- Some other strings in fragment_error.html -->
+	<string name="less">Less</string>
+	<string name="more">More</string>
+	<string name="report">Report</string>
+</resources>

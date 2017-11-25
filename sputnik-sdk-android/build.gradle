@@ -1,0 +1,44 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        preDexLibraries = false
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile files('libs/volley.jar')
+}
+
+task deleteAssets(type: Delete) {
+    delete "src/main/assets/sputnik-sdk-assets.zip"
+}
+
+task resZip(type: Zip) {
+    from 'src/resources'
+    archiveName = "sputnik-sdk-assets.zip"
+    destinationDir = new File(new File(projectDir, "src/main/assets").absolutePath)
+}
+
+resZip.dependsOn deleteAssets
+
+preBuild.dependsOn resZip
+preBuild.mustRunAfter resZip

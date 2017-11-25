@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Sputnik SDK Android</string>
+    <string name="unzipInProgress">Unpacking map file...</string>
+    <string name="unpackingMapFailed">Failed to unpack the map</string>
+
+</resources>

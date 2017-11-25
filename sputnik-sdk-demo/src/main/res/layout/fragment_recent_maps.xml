@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:id="@+id/recentMapsContainer"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <LinearLayout style="@style/VerticalContainer" android:layout_height="50dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight=".05"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".70"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/recentMapsLabel"
+            android:id="@+id/textView"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight=".05"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/VerticalContainer" android:layout_height="wrap_content">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight=".05"/>
+
+        <ListView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight=".80"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/recentMaps"/>
+
+        <ProgressBar
+           android:id="@+id/listViewProgress"
+           android:layout_centerInParent="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:indeterminateOnly="true"
+           android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/noItemsInListView"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/noItemsLabel"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight=".05"/>
+    </LinearLayout>
+</LinearLayout>

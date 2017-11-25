@@ -1,0 +1,1758 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" maximum-extent="-20037508.34,-20037508.34,20037508.34,20037508.34" background-color="#fcfbe7">
+
+<Parameters>
+  <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
+  <Parameter name="format">png</Parameter>
+  <Parameter name="minzoom">0</Parameter>
+  <Parameter name="maxzoom">18</Parameter>
+  <Parameter name="attribution"><![CDATA[Data © OpenStreetMap (and) contributors, CC-BY-SA]]></Parameter>
+  <Parameter name="name"><![CDATA[OSM Bright]]></Parameter>
+</Parameters>
+
+<FontSet name="fontset-0">
+  <Font face-name="Open Sans Semibold"/>
+  <Font face-name="DejaVu Sans Book"/>
+  <Font face-name="unifont Medium"/>
+</FontSet>
+<FontSet name="fontset-1">
+  <Font face-name="Open Sans Bold Italic"/>
+  <Font face-name="DejaVu Sans Bold Italic"/>
+  <Font face-name="unifont Medium"/>
+</FontSet>
+<FontSet name="fontset-2">
+  <Font face-name="Open Sans Bold"/>
+  <Font face-name="DejaVu Sans Bold"/>
+  <Font face-name="unifont Medium"/>
+</FontSet>
+<FontSet name="fontset-3">
+  <Font face-name="Open Sans Italic"/>
+  <Font face-name="DejaVu Sans Italic"/>
+  <Font face-name="unifont Medium"/>
+</FontSet>
+<FontSet name="fontset-4">
+  <Font face-name="Open Sans Semibold Italic"/>
+  <Font face-name="DejaVu Sans Italic"/>
+  <Font face-name="unifont Medium"/>
+</FontSet>
+
+<Style name="landuse_gen1" filter-mode="first" >
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([type] = 'wood')</Filter>
+    <PolygonSymbolizer fill="#c3d9ad" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([type] = 'university')</Filter>
+    <PolygonSymbolizer fill="#fff5cc" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([type] = 'stadium')</Filter>
+    <PolygonSymbolizer fill="#b8e6b8" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([type] = 'sports_centre')</Filter>
+    <PolygonSymbolizer fill="#b8e6b8" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([type] = 'school')</Filter>
+    <PolygonSymbolizer fill="#fff5cc" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([type] = 'residential')</Filter>
+    <PolygonSymbolizer fill="#f7f6e2" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([type] = 'pitch')</Filter>
+    <PolygonSymbolizer fill="#b8e6b8" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([type] = 'pedestrian')</Filter>
+    <PolygonSymbolizer fill="#fafaf5" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([type] = 'parking')</Filter>
+    <PolygonSymbolizer fill="#eeeeee" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([type] = 'park')</Filter>
+    <PolygonSymbolizer fill="#daf2c1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([type] = 'industrial')</Filter>
+    <PolygonSymbolizer fill="#f2f1de" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([type] = 'hospital')</Filter>
+    <PolygonSymbolizer fill="#e5c6c3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([type] = 'grass')</Filter>
+    <PolygonSymbolizer fill="#e6f2c1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([type] = 'golf_course')</Filter>
+    <PolygonSymbolizer fill="#daf2c1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([type] = 'forest')</Filter>
+    <PolygonSymbolizer fill="#c3d9ad" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([type] = 'common')</Filter>
+    <PolygonSymbolizer fill="#daf2c1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([type] = 'island')</Filter>
+    <PolygonSymbolizer fill="#daf2c1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([type] = 'islet')</Filter>
+    <PolygonSymbolizer fill="#daf2c1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([type] = 'commercial')</Filter>
+    <PolygonSymbolizer fill="#f2f1de" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([type] = 'college')</Filter>
+    <PolygonSymbolizer fill="#fff5cc" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([type] = 'cemetery')</Filter>
+    <PolygonSymbolizer fill="#d6ded2" />
+  </Rule>
+</Style>
+<Layer name="landuse_gen1_1"
+  status="on"
+  srs="+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs">
+    <StyleName>landuse_gen1</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[{%mapfile}]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[geometry]]></Parameter>
+       <Parameter name="id"><![CDATA[landuse_gen1_1]]></Parameter>
+       <Parameter name="use_spatial_index"><![CDATA[true]]></Parameter>
+       <Parameter name="index_table"><![CDATA[pg_landuse_index]]></Parameter>
+       <Parameter name="srs"><![CDATA[+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs]]></Parameter>
+       <Parameter name="table"><![CDATA[( SELECT OGC_FID,geometry, landuse AS type FROM pg_landuse ) AS data]]></Parameter>
+       <Parameter name="type"><![CDATA[sqlite]]></Parameter>
+    </Datasource>
+  </Layer>
+
+ <Layer name="landuse_gen1_2"
+  status="on"
+  srs="+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs">
+    <StyleName>landuse_gen1</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[{%mapfile}]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[geometry]]></Parameter>
+       <Parameter name="id"><![CDATA[landuse_gen1_2]]></Parameter>
+       <Parameter name="use_spatial_index"><![CDATA[true]]></Parameter>
+       <Parameter name="index_table"><![CDATA[pg_leisure_index]]></Parameter>
+       <Parameter name="srs"><![CDATA[+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs]]></Parameter>
+       <Parameter name="table"><![CDATA[( SELECT OGC_FID,geometry, leisure AS type FROM pg_leisure ) AS data]]></Parameter>
+       <Parameter name="type"><![CDATA[sqlite]]></Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer name="landuse_gen1_3"
+  status="on"
+  srs="+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs">
+    <StyleName>landuse_gen1</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[{%mapfile}]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[geometry]]></Parameter>
+       <Parameter name="id"><![CDATA[landuse_gen1_3]]></Parameter>
+       <Parameter name="use_spatial_index"><![CDATA[true]]></Parameter>
+       <Parameter name="index_table"><![CDATA[pg_natural_index]]></Parameter>
+       <Parameter name="srs"><![CDATA[+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs]]></Parameter>
+       <Parameter name="table"><![CDATA[( SELECT OGC_FID,geometry, natural AS type FROM pg_natural ) AS data]]></Parameter>
+       <Parameter name="type"><![CDATA[sqlite]]></Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer name="landuse_gen1_4"
+  status="on"
+  srs="+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs">
+    <StyleName>landuse_gen1</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[{%mapfile}]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[geometry]]></Parameter>
+       <Parameter name="id"><![CDATA[landuse_gen1_1]]></Parameter>
+       <Parameter name="use_spatial_index"><![CDATA[true]]></Parameter>
+       <Parameter name="index_table"><![CDATA[pg_amenity_index]]></Parameter>
+       <Parameter name="srs"><![CDATA[+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs]]></Parameter>
+       <Parameter name="table"><![CDATA[( SELECT OGC_FID,geometry, amenity AS type FROM pg_amenity) AS data]]></Parameter>
+       <Parameter name="type"><![CDATA[sqlite]]></Parameter>
+    </Datasource>
+  </Layer>    
+
+ <Style name="landuse" filter-mode="first" >
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([type] = 'wood')</Filter>
+    <PolygonSymbolizer fill="#c3d9ad" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([type] = 'university')</Filter>
+    <PolygonSymbolizer fill="#fff5cc" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([type] = 'stadium')</Filter>
+    <PolygonSymbolizer fill="#b8e6b8" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([type] = 'sports_centre')</Filter>
+    <PolygonSymbolizer fill="#b8e6b8" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([type] = 'school')</Filter>
+    <PolygonSymbolizer fill="#fff5cc" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([type] = 'residential')</Filter>
+    <PolygonSymbolizer fill="#f7f6e2" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([type] = 'pitch')</Filter>
+    <PolygonSymbolizer fill="#b8e6b8" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([type] = 'pedestrian')</Filter>
+    <PolygonSymbolizer fill="#fafaf5" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([type] = 'parking')</Filter>
+    <PolygonSymbolizer fill="#eeeeee" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([type] = 'park')</Filter>
+    <PolygonSymbolizer fill="#daf2c1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([type] = 'industrial')</Filter>
+    <PolygonSymbolizer fill="#f2f1de" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([type] = 'hospital')</Filter>
+    <PolygonSymbolizer fill="#e5c6c3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([type] = 'grass')</Filter>
+    <PolygonSymbolizer fill="#daf2c1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([type] = 'golf_course')</Filter>
+    <PolygonSymbolizer fill="#daf2c1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([type] = 'forest')</Filter>
+    <PolygonSymbolizer fill="#c3d9ad" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([type] = 'common')</Filter>
+    <PolygonSymbolizer fill="#daf2c1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([type] = 'island')</Filter>
+    <PolygonSymbolizer fill="#daf2c1" />
+  </Rule>
+      <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([type] = 'islet')</Filter>
+    <PolygonSymbolizer fill="#daf2c1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([type] = 'commercial')</Filter>
+    <PolygonSymbolizer fill="#f2f1de" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([type] = 'college')</Filter>
+    <PolygonSymbolizer fill="#fff5cc" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([type] = 'cemetery')</Filter>
+    <PolygonSymbolizer fill="#d6ded2" />
+  </Rule>
+</Style>
+ <Layer name="landuse_1"
+  status="on"
+  srs="+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs">
+    <StyleName>landuse</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[{%mapfile}]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[geometry]]></Parameter>
+       <Parameter name="id"><![CDATA[landuse_1]]></Parameter>
+       <Parameter name="use_spatial_index"><![CDATA[true]]></Parameter>
+       <Parameter name="index_table"><![CDATA[pg_landuse_index]]></Parameter>
+       <Parameter name="srs"><![CDATA[+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs]]></Parameter>
+       <Parameter name="table"><![CDATA[( SELECT OGC_FID,geometry, landuse AS type FROM pg_landuse) AS data]]></Parameter>
+       <Parameter name="type"><![CDATA[sqlite]]></Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer name="landuse_2"
+  status="on"
+  srs="+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs">
+    <StyleName>landuse</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[{%mapfile}]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[geometry]]></Parameter>
+       <Parameter name="id"><![CDATA[landuse_2]]></Parameter>
+       <Parameter name="use_spatial_index"><![CDATA[true]]></Parameter>
+       <Parameter name="index_table"><![CDATA[pg_leisure_index]]></Parameter>
+       <Parameter name="srs"><![CDATA[+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs]]></Parameter>
+       <Parameter name="table"><![CDATA[( SELECT OGC_FID,geometry, leisure AS type FROM pg_leisure ) AS data]]></Parameter>
+       <Parameter name="type"><![CDATA[sqlite]]></Parameter>
+    </Datasource>
+  </Layer>
+
+
+  <Layer name="landuse_3"
+  status="on"
+  srs="+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs">
+    <StyleName>landuse</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[{%mapfile}]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[geometry]]></Parameter>
+       <Parameter name="id"><![CDATA[landuse_3]]></Parameter>
+       <Parameter name="use_spatial_index"><![CDATA[true]]></Parameter>
+       <Parameter name="index_table"><![CDATA[pg_natural_index]]></Parameter>
+       <Parameter name="srs"><![CDATA[+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs]]></Parameter>
+       <Parameter name="table"><![CDATA[( SELECT OGC_FID,geometry, natural AS type FROM pg_natural) AS data]]></Parameter>
+       <Parameter name="type"><![CDATA[sqlite]]></Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer name="landuse_4"
+  status="on"
+  srs="+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs">
+    <StyleName>landuse</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[{%mapfile}]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[geometry]]></Parameter>
+       <Parameter name="id"><![CDATA[landuse_4]]></Parameter>
+       <Parameter name="use_spatial_index"><![CDATA[true]]></Parameter>
+       <Parameter name="index_table"><![CDATA[pg_amenity_index]]></Parameter>
+       <Parameter name="srs"><![CDATA[+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs]]></Parameter>
+       <Parameter name="table"><![CDATA[( SELECT OGC_FID,geometry, amenity AS type FROM pg_amenity) AS data]]></Parameter>
+       <Parameter name="type"><![CDATA[sqlite]]></Parameter>
+    </Datasource>
+  </Layer>    
+  
+<Style name="waterway_low" filter-mode="first" >
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="0.8" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="0.6" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="0.4" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="0.2" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="0.1" stroke="#c4dff6" />
+  </Rule>
+</Style>
+<Layer name="waterway_low"
+  status="on"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>waterway_low</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[{%mapfile}]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[geometry]]></Parameter>
+       <Parameter name="id"><![CDATA[waterway]]></Parameter>
+       <Parameter name="use_spatial_index"><![CDATA[true]]></Parameter>
+       <Parameter name="index_table"><![CDATA[ln_waterway_index]]></Parameter>
+       <Parameter name="srs"><![CDATA[+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over]]></Parameter>
+       <Parameter name="table"><![CDATA[( select OGC_FID, waterway as type, geometry from ln_waterway where waterway in ('river', 'canal')) AS data]]></Parameter>
+       <Parameter name="type"><![CDATA[sqlite]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="waterway_med" filter-mode="first" >
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([type] = 'stream')</Filter>
+    <LineSymbolizer stroke-width="0.4" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'stream')</Filter>
+    <LineSymbolizer stroke-width="0.2" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([type] = 'canal')</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'canal')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([type] = 'river')</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'river')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <LineSymbolizer stroke="#c4dff6" />
+  </Rule>
+</Style>
+<Layer name="waterway_med"
+  status="on"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>waterway_med</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[{%mapfile}]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[geometry]]></Parameter>
+       <Parameter name="srs"><![CDATA[+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over]]></Parameter>
+       <Parameter name="use_spatial_index"><![CDATA[true]]></Parameter>
+       <Parameter name="index_table"><![CDATA[ln_waterway_index]]></Parameter>
+       <Parameter name="table"><![CDATA[( select OGC_FID, waterway as type, geometry from ln_waterway where waterway in ('river', 'canal', 'stream')) AS data]]></Parameter>
+       <Parameter name="type"><![CDATA[sqlite]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="waterway_high" filter-mode="first" >
+  <Rule>
+    <MaxScaleDenominator>750</MaxScaleDenominator>
+    <Filter>([type] = 'drain')</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500</MaxScaleDenominator>
+    <MinScaleDenominator>750</MinScaleDenominator>
+    <Filter>([type] = 'drain')</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MinScaleDenominator>1500</MinScaleDenominator>
+    <Filter>([type] = 'drain')</Filter>
+    <LineSymbolizer stroke-width="0.7" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'drain')</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'drain')</Filter>
+    <LineSymbolizer stroke-width="0.3" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'drain')</Filter>
+    <LineSymbolizer stroke-width="0.1" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750</MaxScaleDenominator>
+    <Filter>([type] = 'ditch')</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500</MaxScaleDenominator>
+    <MinScaleDenominator>750</MinScaleDenominator>
+    <Filter>([type] = 'ditch')</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MinScaleDenominator>1500</MinScaleDenominator>
+    <Filter>([type] = 'ditch')</Filter>
+    <LineSymbolizer stroke-width="0.7" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'ditch')</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'ditch')</Filter>
+    <LineSymbolizer stroke-width="0.3" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'ditch')</Filter>
+    <LineSymbolizer stroke-width="0.1" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500</MaxScaleDenominator>
+    <Filter>([type] = 'stream')</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MinScaleDenominator>1500</MinScaleDenominator>
+    <Filter>([type] = 'stream')</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'stream')</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'stream')</Filter>
+    <LineSymbolizer stroke-width="0.8" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'stream')</Filter>
+    <LineSymbolizer stroke-width="0.6" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750</MaxScaleDenominator>
+    <Filter>([type] = 'canal')</Filter>
+    <LineSymbolizer stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500</MaxScaleDenominator>
+    <MinScaleDenominator>750</MinScaleDenominator>
+    <Filter>([type] = 'canal')</Filter>
+    <LineSymbolizer stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MinScaleDenominator>1500</MinScaleDenominator>
+    <Filter>([type] = 'canal')</Filter>
+    <LineSymbolizer stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'canal')</Filter>
+    <LineSymbolizer stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'canal')</Filter>
+    <LineSymbolizer stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'canal')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750</MaxScaleDenominator>
+    <Filter>([type] = 'river')</Filter>
+    <LineSymbolizer stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500</MaxScaleDenominator>
+    <MinScaleDenominator>750</MinScaleDenominator>
+    <Filter>([type] = 'river')</Filter>
+    <LineSymbolizer stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MinScaleDenominator>1500</MinScaleDenominator>
+    <Filter>([type] = 'river')</Filter>
+    <LineSymbolizer stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'river')</Filter>
+    <LineSymbolizer stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'river')</Filter>
+    <LineSymbolizer stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'river')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#c4dff6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <LineSymbolizer stroke="#c4dff6" />
+  </Rule>
+</Style>
+<Layer name="waterway_high"
+  status="on"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>waterway_high</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[{%mapfile}]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[geometry]]></Parameter>
+       <Parameter name="srs"><![CDATA[+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over]]></Parameter>
+       <Parameter name="use_spatial_index"><![CDATA[true]]></Parameter>
+       <Parameter name="index_table"><![CDATA[ln_waterway_index]]></Parameter>
+       <Parameter name="table"><![CDATA[( select OGC_FID, waterway as type, geometry from ln_waterway where waterway in ('river', 'canal', 'stream', 'ditch', 'drain')) AS data]]></Parameter>
+       <Parameter name="type"><![CDATA[sqlite]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="water" filter-mode="first" >
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <PolygonSymbolizer fill="#c4dff6" />
+  </Rule>
+</Style>
+ <Layer name="water1"
+  status="on"
+  srs="+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs">
+    <StyleName>water</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[{%mapfile}]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[geometry]]></Parameter>
+       <Parameter name="id"><![CDATA[water]]></Parameter>
+       <Parameter name="use_spatial_index"><![CDATA[true]]></Parameter>
+       <Parameter name="index_table"><![CDATA[pg_water_index]]></Parameter>
+       <Parameter name="srs"><![CDATA[+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs]]></Parameter>
+       <Parameter name="table"><![CDATA[( select OGC_FID, waterway as type, geometry from pg_water) AS data]]></Parameter>
+       <Parameter name="type"><![CDATA[sqlite]]></Parameter>
+    </Datasource>
+  </Layer> 
+
+   <Layer name="water_pg"
+  status="on"
+  srs="+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs">
+    <StyleName>water</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[{%mapfile}]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[geometry]]></Parameter>
+       <Parameter name="id"><![CDATA[water_pg]]></Parameter>
+       <Parameter name="use_spatial_index"><![CDATA[true]]></Parameter>
+       <Parameter name="index_table"><![CDATA[pg_waterway_index]]></Parameter>
+       <Parameter name="srs"><![CDATA[+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs]]></Parameter>
+       <Parameter name="table"><![CDATA[( select OGC_FID, waterway as type, geometry from pg_waterway where waterway in ('riverbank')) AS data]]></Parameter>
+       <Parameter name="type"><![CDATA[sqlite]]></Parameter>
+    </Datasource>
+  </Layer> 
+<Layer name="water2"
+  status="on"
+  srs="+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs">
+    <StyleName>water</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[{%mapfile}]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[geometry]]></Parameter>
+       <Parameter name="id"><![CDATA[water]]></Parameter>
+       <Parameter name="use_spatial_index"><![CDATA[true]]></Parameter>
+       <Parameter name="index_table"><![CDATA[pg_natural_index]]></Parameter>
+       <Parameter name="srs"><![CDATA[+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs]]></Parameter>
+       <Parameter name="table"><![CDATA[(  SELECT OGC_FID,geometry, natural  FROM pg_natural WHERE natural in ('water', 'pond')) AS data]]></Parameter>
+       <Parameter name="type"><![CDATA[sqlite]]></Parameter>
+    </Datasource>
+  </Layer>
+
+   <Layer name="water_pg2"
+  status="on"
+  srs="+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs">
+    <StyleName>water</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[{%mapfile}]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[geometry]]></Parameter>
+       <Parameter name="id"><![CDATA[water_pg2]]></Parameter>
+       <Parameter name="use_spatial_index"><![CDATA[true]]></Parameter>
+       <Parameter name="index_table"><![CDATA[pg_natural_water_index]]></Parameter>
+       <Parameter name="srs"><![CDATA[+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs]]></Parameter>
+       <Parameter name="table"><![CDATA[( select OGC_FID, natural as type, geometry from pg_natural_water) AS data]]></Parameter>
+       <Parameter name="type"><![CDATA[sqlite]]></Parameter>
+    </Datasource>
+  </Layer>  
+  <Layer name="island"
+  status="on"
+  srs="+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs">
+    <StyleName>landuse</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[{%mapfile}]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[geometry]]></Parameter>
+       <Parameter name="id"><![CDATA[pg_island]]></Parameter>
+       <Parameter name="use_spatial_index"><![CDATA[true]]></Parameter>
+       <Parameter name="index_table"><![CDATA[pg_island_index]]></Parameter>
+       <Parameter name="srs"><![CDATA[+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs]]></Parameter>
+       <Parameter name="table"><![CDATA[( select OGC_FID, place as type, geometry from pg_island) AS data]]></Parameter>
+       <Parameter name="type"><![CDATA[sqlite]]></Parameter>
+    </Datasource>
+  </Layer> 
+
+
+<Style name="buildings" filter-mode="first" >
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <PolygonSymbolizer fill="#e4e0e0" />
+    <LineSymbolizer stroke="#ccc5c5" stroke-width="0.4" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <PolygonSymbolizer fill="#e4e0e0" />
+  </Rule>
+</Style> 
+ <Layer name="buildings"
+  status="on"
+  srs="+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs">
+    <StyleName>buildings</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[{%mapfile}]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[geometry]]></Parameter>
+       <Parameter name="id"><![CDATA[buildings]]></Parameter>
+       <Parameter name="use_spatial_index"><![CDATA[true]]></Parameter>
+       <Parameter name="index_table"><![CDATA[pg_building_index]]></Parameter>
+       <Parameter name="srs"><![CDATA[+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs]]></Parameter>
+       <Parameter name="table"><![CDATA[( SELECT OGC_FID, geometry FROM pg_building) AS data]]></Parameter>
+       <Parameter name="type"><![CDATA[sqlite]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="aeroway" filter-mode="first" >
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'taxiway')</Filter>
+    <LineSymbolizer stroke-width="5" stroke="#dddddd" stroke-linecap="butt" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'taxiway')</Filter>
+    <LineSymbolizer stroke-width="4" stroke="#dddddd" stroke-linecap="butt" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'taxiway')</Filter>
+    <LineSymbolizer stroke-width="3" stroke="#dddddd" stroke-linecap="butt" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'taxiway')</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#dddddd" stroke-linecap="butt" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([type] = 'taxiway')</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke="#dddddd" stroke-linecap="butt" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'taxiway')</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#dddddd" stroke-linecap="butt" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([type] = 'taxiway')</Filter>
+    <LineSymbolizer stroke-width="0.2" stroke="#dddddd" stroke-linecap="butt" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([type] = 'taxiway')</Filter>
+    <LineSymbolizer stroke-width="0.2" stroke="#dddddd" stroke-linecap="butt" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([type] = 'taxiway')</Filter>
+    <LineSymbolizer stroke-width="0.2" stroke="#dddddd" stroke-linecap="butt" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'runway')</Filter>
+    <LineSymbolizer stroke-width="23" stroke="#dddddd" stroke-linecap="butt" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'runway')</Filter>
+    <LineSymbolizer stroke-width="19" stroke="#dddddd" stroke-linecap="butt" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'runway')</Filter>
+    <LineSymbolizer stroke-width="15" stroke="#dddddd" stroke-linecap="butt" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'runway')</Filter>
+    <LineSymbolizer stroke-width="11" stroke="#dddddd" stroke-linecap="butt" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([type] = 'runway')</Filter>
+    <LineSymbolizer stroke-width="7" stroke="#dddddd" stroke-linecap="butt" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'runway')</Filter>
+    <LineSymbolizer stroke-width="5" stroke="#dddddd" stroke-linecap="butt" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([type] = 'runway')</Filter>
+    <LineSymbolizer stroke-width="3" stroke="#dddddd" stroke-linecap="butt" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([type] = 'runway')</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#dddddd" stroke-linecap="butt" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([type] = 'runway')</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#dddddd" stroke-linecap="butt" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <LineSymbolizer stroke="#dddddd" stroke-linecap="butt" stroke-linejoin="miter" />
+  </Rule>
+</Style>
+ <Layer name="aeroway"
+  status="on"
+  srs="+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs">
+    <StyleName>aeroway</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[{%mapfile}]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[geometry]]></Parameter>
+       <Parameter name="id"><![CDATA[aeroway]]></Parameter>
+       <Parameter name="use_spatial_index"><![CDATA[true]]></Parameter>
+       <Parameter name="index_table"><![CDATA[pg_aeroway_index]]></Parameter>
+       <Parameter name="srs"><![CDATA[+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs]]></Parameter>
+       <Parameter name="table"><![CDATA[( SELECT OGC_FID, geometry, aeroway as type FROM pg_aeroway where aeroway in ('apron', 'runway', 'taxiway')) AS data]]></Parameter>
+       <Parameter name="type"><![CDATA[sqlite]]></Parameter>
+    </Datasource>
+  </Layer>   
+<!--
+<Style name="roads_motorway" filter-mode="first" >
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MinScaleDenominator>500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'motorway') and ([type] = 'trunk')</Filter>
+    <LineSymbolizer stroke-width="20" stroke-linecap="round" stroke-linejoin="round" stroke="#edaa88" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'motorway') and ([type] = 'trunk')</Filter>
+    <LineSymbolizer stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke="#edaa88" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'motorway') and ([type] = 'trunk')</Filter>
+    <LineSymbolizer stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke="#edaa88" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'motorway') and ([type] = 'trunk')</Filter>
+    <LineSymbolizer stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke="#edaa88" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'motorway') and ([type] = 'trunk')</Filter>
+    <LineSymbolizer stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke="#edaa88" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'motorway') and ([type] = 'trunk')</Filter>
+    <LineSymbolizer stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#edaa88" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'motorway') and ([type] = 'trunk')</Filter>
+    <LineSymbolizer stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke="#edaa88" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'motorway') and ([type] = 'trunk')</Filter>
+    <LineSymbolizer stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" stroke="#edaa88" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MinScaleDenominator>500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'motorway') and ([type] = 'motorway')</Filter>
+    <LineSymbolizer stroke-width="20" stroke-linecap="round" stroke-linejoin="round" stroke="#ed8888" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'motorway') and ([type] = 'motorway')</Filter>
+    <LineSymbolizer stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke="#ed8888" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'motorway') and ([type] = 'motorway')</Filter>
+    <LineSymbolizer stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke="#ed8888" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'motorway') and ([type] = 'motorway')</Filter>
+    <LineSymbolizer stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke="#ed8888" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'motorway') and ([type] = 'motorway')</Filter>
+    <LineSymbolizer stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke="#ed8888" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'motorway') and ([type] = 'motorway')</Filter>
+    <LineSymbolizer stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#ed8888" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'motorway') and ([type] = 'motorway')</Filter>
+    <LineSymbolizer stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke="#ed8888" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'motorway') and ([type] = 'motorway')</Filter>
+    <LineSymbolizer stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" stroke="#ed8888" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MinScaleDenominator>500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'motorway')</Filter>
+    <LineSymbolizer stroke-width="20" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'motorway')</Filter>
+    <LineSymbolizer stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'motorway')</Filter>
+    <LineSymbolizer stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'motorway')</Filter>
+    <LineSymbolizer stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'motorway')</Filter>
+    <LineSymbolizer stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'motorway')</Filter>
+    <LineSymbolizer stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'motorway')</Filter>
+    <LineSymbolizer stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'motorway')</Filter>
+    <LineSymbolizer stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>500</MinScaleDenominator>
+    <Filter>([type] = 'trunk')</Filter>
+    <LineSymbolizer stroke="#edaa88" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>500</MinScaleDenominator>
+    <Filter>([type] = 'motorway')</Filter>
+    <LineSymbolizer stroke="#ed8888" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>500</MinScaleDenominator>
+    <LineSymbolizer stroke="#ffffff" />
+  </Rule>
+</Style>
+<Layer name="roads_motorway" status="on"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>roads_motorway</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[{%mapfile}]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[geometry]]></Parameter>
+       <Parameter name="id"><![CDATA[roads_motorway]]></Parameter>
+       <Parameter name="use_spatial_index"><![CDATA[true]]></Parameter>
+       <Parameter name="index_table"><![CDATA[ln_highway_motorway_index]]></Parameter>
+       <Parameter name="srs"><![CDATA[+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over]]></Parameter>
+       <Parameter name="table"><![CDATA[( SELECT OGC_FID, geometry, highway AS type, stylegroup FROM ln_highway_motorway) AS data]]></Parameter>
+       <Parameter name="type"><![CDATA[sqlite]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="roads_main" filter-mode="first" >
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MinScaleDenominator>500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'mainroad') and ([type] = 'secondary')</Filter>
+    <LineSymbolizer stroke-width="17" stroke-linecap="round" stroke-linejoin="round" stroke="#fff0a6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'mainroad') and ([type] = 'secondary')</Filter>
+    <LineSymbolizer stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke="#fff0a6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'mainroad') and ([type] = 'secondary')</Filter>
+    <LineSymbolizer stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke="#fff0a6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'mainroad') and ([type] = 'secondary')</Filter>
+    <LineSymbolizer stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke="#fff0a6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'mainroad') and ([type] = 'secondary')</Filter>
+    <LineSymbolizer stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke="#fff0a6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'mainroad') and ([type] = 'secondary')</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#fff0a6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'mainroad') and ([type] = 'secondary')</Filter>
+    <LineSymbolizer stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" stroke="#fff0a6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'mainroad') and ([type] = 'secondary')</Filter>
+    <LineSymbolizer stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" stroke="#fff0a6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MinScaleDenominator>500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'mainroad') and ([type] = 'primary')</Filter>
+    <LineSymbolizer stroke-width="17" stroke-linecap="round" stroke-linejoin="round" stroke="#ffd98c" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'mainroad') and ([type] = 'primary')</Filter>
+    <LineSymbolizer stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke="#ffd98c" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'mainroad') and ([type] = 'primary')</Filter>
+    <LineSymbolizer stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke="#ffd98c" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'mainroad') and ([type] = 'primary')</Filter>
+    <LineSymbolizer stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke="#ffd98c" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'mainroad') and ([type] = 'primary')</Filter>
+    <LineSymbolizer stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke="#ffd98c" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'mainroad') and ([type] = 'primary')</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#ffd98c" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'mainroad') and ([type] = 'primary')</Filter>
+    <LineSymbolizer stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" stroke="#ffd98c" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'mainroad') and ([type] = 'primary')</Filter>
+    <LineSymbolizer stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" stroke="#ffd98c" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MinScaleDenominator>500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'mainroad')</Filter>
+    <LineSymbolizer stroke-width="17" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'mainroad')</Filter>
+    <LineSymbolizer stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'mainroad')</Filter>
+    <LineSymbolizer stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'mainroad')</Filter>
+    <LineSymbolizer stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'mainroad')</Filter>
+    <LineSymbolizer stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'mainroad')</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'mainroad')</Filter>
+    <LineSymbolizer stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'mainroad')</Filter>
+    <LineSymbolizer stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>500</MinScaleDenominator>
+    <Filter>([type] = 'secondary')</Filter>
+    <LineSymbolizer stroke="#fff0a6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>500</MinScaleDenominator>
+    <Filter>([type] = 'primary')</Filter>
+    <LineSymbolizer stroke="#ffd98c" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>500</MinScaleDenominator>
+    <LineSymbolizer stroke="#ffffff" />
+  </Rule>
+</Style>
+<Layer name="roads_main" status="on"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>roads_main</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[{%mapfile}]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[geometry]]></Parameter>
+       <Parameter name="id"><![CDATA[roads_main]]></Parameter>
+       <Parameter name="use_spatial_index"><![CDATA[true]]></Parameter>
+       <Parameter name="index_table"><![CDATA[ln_highway_mainroad_index]]></Parameter>
+       <Parameter name="srs"><![CDATA[+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over]]></Parameter>
+       <Parameter name="table"><![CDATA[( SELECT OGC_FID, geometry, highway AS type, stylegroup FROM ln_highway_mainroad) AS data]]></Parameter>
+       <Parameter name="type"><![CDATA[sqlite]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="roads_minor" filter-mode="first" >
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MinScaleDenominator>500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad') and ([type] = 'secondary_link')</Filter>
+    <LineSymbolizer stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke="#fff0a6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad') and ([type] = 'secondary_link')</Filter>
+    <LineSymbolizer stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke="#fff0a6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad') and ([type] = 'secondary_link')</Filter>
+    <LineSymbolizer stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke="#fff0a6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad') and ([type] = 'secondary_link')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#fff0a6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad') and ([type] = 'secondary_link')</Filter>
+    <LineSymbolizer stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" stroke="#fff0a6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad') and ([type] = 'secondary_link')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke="#fff0a6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MinScaleDenominator>500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad') and ([type] = 'primary_link')</Filter>
+    <LineSymbolizer stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke="#ffd98c" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad') and ([type] = 'primary_link')</Filter>
+    <LineSymbolizer stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke="#ffd98c" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad') and ([type] = 'primary_link')</Filter>
+    <LineSymbolizer stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke="#ffd98c" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad') and ([type] = 'primary_link')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#ffd98c" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad') and ([type] = 'primary_link')</Filter>
+    <LineSymbolizer stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" stroke="#ffd98c" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad') and ([type] = 'primary_link')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke="#ffd98c" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MinScaleDenominator>500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad') and ([type] = 'trunk_link')</Filter>
+    <LineSymbolizer stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke="#edaa88" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad') and ([type] = 'trunk_link')</Filter>
+    <LineSymbolizer stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke="#edaa88" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad') and ([type] = 'trunk_link')</Filter>
+    <LineSymbolizer stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke="#edaa88" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad') and ([type] = 'trunk_link')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#edaa88" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad') and ([type] = 'trunk_link')</Filter>
+    <LineSymbolizer stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" stroke="#edaa88" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad') and ([type] = 'trunk_link')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke="#edaa88" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MinScaleDenominator>500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad') and ([type] = 'motorway_link')</Filter>
+    <LineSymbolizer stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke="#ed8888" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad') and ([type] = 'motorway_link')</Filter>
+    <LineSymbolizer stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke="#ed8888" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad') and ([type] = 'motorway_link')</Filter>
+    <LineSymbolizer stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke="#ed8888" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad') and ([type] = 'motorway_link')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#ed8888" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad') and ([type] = 'motorway_link')</Filter>
+    <LineSymbolizer stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" stroke="#ed8888" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad') and ([type] = 'motorway_link')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke="#ed8888" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MinScaleDenominator>500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad')</Filter>
+    <LineSymbolizer stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad')</Filter>
+    <LineSymbolizer stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad')</Filter>
+    <LineSymbolizer stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad')</Filter>
+    <LineSymbolizer stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'minorroad')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>500</MinScaleDenominator>
+    <Filter>([type] = 'secondary_link')</Filter>
+    <LineSymbolizer stroke="#fff0a6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>500</MinScaleDenominator>
+    <Filter>([type] = 'primary_link')</Filter>
+    <LineSymbolizer stroke="#ffd98c" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>500</MinScaleDenominator>
+    <Filter>([type] = 'trunk_link')</Filter>
+    <LineSymbolizer stroke="#edaa88" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>500</MinScaleDenominator>
+    <Filter>([type] = 'motorway_link')</Filter>
+    <LineSymbolizer stroke="#ed8888" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>500</MinScaleDenominator>
+    <LineSymbolizer stroke="#ffffff" />
+  </Rule>
+</Style>
+<Layer name="roads_minor" status="on"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>roads_minor</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[{%mapfile}]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[geometry]]></Parameter>
+       <Parameter name="id"><![CDATA[roads_minor]]></Parameter>
+       <Parameter name="use_spatial_index"><![CDATA[true]]></Parameter>
+       <Parameter name="index_table"><![CDATA[ln_highway_minorroad_index]]></Parameter>
+       <Parameter name="srs"><![CDATA[+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over]]></Parameter>
+       <Parameter name="table"><![CDATA[( SELECT OGC_FID, geometry, highway AS type, stylegroup FROM ln_highway_minorroad) AS data]]></Parameter>
+       <Parameter name="type"><![CDATA[sqlite]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="roads_service" filter-mode="first" >
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MinScaleDenominator>500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'service')</Filter>
+    <LineSymbolizer stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'service')</Filter>
+    <LineSymbolizer stroke-width="3.3333333333333335" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'service')</Filter>
+    <LineSymbolizer stroke-width="1.3333333333333333" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'service')</Filter>
+    <LineSymbolizer stroke-width="0.6666666666666666" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'service')</Filter>
+    <LineSymbolizer stroke-width="0.5333333333333333" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'service')</Filter>
+    <LineSymbolizer stroke-width="0.3333333333333333" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>500</MinScaleDenominator>
+    <LineSymbolizer stroke="#ffffff" />
+  </Rule>
+</Style>
+<Layer name="roads_service" status="on"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>roads_service</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[{%mapfile}]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[geometry]]></Parameter>
+       <Parameter name="id"><![CDATA[roads_service]]></Parameter>
+       <Parameter name="use_spatial_index"><![CDATA[true]]></Parameter>
+       <Parameter name="index_table"><![CDATA[ln_highway_service_index]]></Parameter>
+       <Parameter name="srs"><![CDATA[+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over]]></Parameter>
+       <Parameter name="table"><![CDATA[( SELECT OGC_FID, geometry, stylegroup FROM ln_highway_service) AS data]]></Parameter>
+       <Parameter name="type"><![CDATA[sqlite]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="roads_noauto" filter-mode="first" >
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MinScaleDenominator>500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'noauto')</Filter>
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="3, 3" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'noauto')</Filter>
+    <LineSymbolizer stroke-width="2.5" stroke-dasharray="2, 2" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'noauto')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-dasharray="2, 1" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'noauto')</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke-dasharray="1, 1" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'noauto')</Filter>
+    <LineSymbolizer stroke-width="0.4" stroke-dasharray="1, 1" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'noauto')</Filter>
+    <LineSymbolizer stroke-width="0.25" stroke-dasharray="1, 1" stroke-linejoin="round" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'noauto')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke-width="0" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>500</MinScaleDenominator>
+    <LineSymbolizer stroke="#ffffff" />
+  </Rule>
+</Style>
+<Layer name="roads_noauto" status="on"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>roads_noauto</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[{%mapfile}]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[geometry]]></Parameter>
+       <Parameter name="id"><![CDATA[roads_noauto]]></Parameter>
+       <Parameter name="use_spatial_index"><![CDATA[true]]></Parameter>
+       <Parameter name="index_table"><![CDATA[ln_highway_noauto_index]]></Parameter>
+       <Parameter name="srs"><![CDATA[+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over]]></Parameter>
+       <Parameter name="table"><![CDATA[( SELECT OGC_FID, geometry, highway AS type, stylegroup FROM ln_highway_noauto) AS data]]></Parameter>
+       <Parameter name="type"><![CDATA[sqlite]]></Parameter>
+    </Datasource>
+  </Layer>
+
+  <Style name="roads_rail" filter-mode="first" >
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MinScaleDenominator>500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'railway') and ([type] = 'subway')</Filter>
+    <LineSymbolizer stroke-width="4" stroke-dasharray="1, 2" stroke-opacity="0.67" stroke="#999999" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'railway') and ([type] = 'subway')</Filter>
+    <LineSymbolizer stroke-width="3" stroke-dasharray="1, 2" stroke-opacity="0.67" stroke="#999999" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'railway') and ([type] = 'subway')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-dasharray="1, 2" stroke-opacity="0.67" stroke="#999999" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'railway') and ([type] = 'subway')</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-opacity="0.67" stroke="#999999" stroke-dasharray="1, 1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'railway') and ([type] = 'subway')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.67" stroke="#999999" stroke-dasharray="1, 1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'railway') and ([type] = 'subway')</Filter>
+    <LineSymbolizer stroke-width="0.8" stroke-opacity="0.67" stroke="#999999" stroke-dasharray="1, 1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'railway') and ([type] = 'subway')</Filter>
+    <LineSymbolizer stroke-width="0.4" stroke-opacity="0.67" stroke="#999999" stroke-dasharray="1, 1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'railway') and ([type] = 'subway')</Filter>
+    <LineSymbolizer stroke-width="0.2" stroke-opacity="0.67" stroke="#999999" stroke-dasharray="1, 1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MinScaleDenominator>500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'railway')</Filter>
+    <LineSymbolizer stroke-width="4" stroke-dasharray="1, 2" stroke="#999999" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'railway')</Filter>
+    <LineSymbolizer stroke-width="3" stroke-dasharray="1, 2" stroke="#999999" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'railway')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-dasharray="1, 2" stroke="#999999" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([stylegroup] = 'railway')</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke="#999999" stroke-dasharray="1, 1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'railway')</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#999999" stroke-dasharray="1, 1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'railway')</Filter>
+    <LineSymbolizer stroke-width="0.8" stroke="#999999" stroke-dasharray="1, 1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'railway')</Filter>
+    <LineSymbolizer stroke-width="0.4" stroke="#999999" stroke-dasharray="1, 1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([stylegroup] = 'railway')</Filter>
+    <LineSymbolizer stroke-width="0.2" stroke="#999999" stroke-dasharray="1, 1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>500</MinScaleDenominator>
+    <LineSymbolizer stroke="#ffffff" />
+  </Rule>
+</Style>
+
+<Layer name="roads_rail" status="on"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>roads_rail</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[{%mapfile}]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[geometry]]></Parameter>
+       <Parameter name="id"><![CDATA[roads_rail]]></Parameter>
+       <Parameter name="use_spatial_index"><![CDATA[true]]></Parameter>
+       <Parameter name="index_table"><![CDATA[ln_railway_index]]></Parameter>
+       <Parameter name="srs"><![CDATA[+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over]]></Parameter>
+       <Parameter name="table"><![CDATA[( SELECT OGC_FID, geometry, railway AS type, stylegroup FROM ln_railway) AS data]]></Parameter>
+       <Parameter name="type"><![CDATA[sqlite]]></Parameter>
+    </Datasource>
+  </Layer>   -->
+</Map>

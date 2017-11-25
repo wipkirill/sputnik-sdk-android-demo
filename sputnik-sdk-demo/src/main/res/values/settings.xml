@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Sputnik</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="serverProtocol">http</string>
+    <string name="serverHost">localhost</string>
+    <string name="homeFolder">Sputnik</string>
+
+    <string name="downloadMapUrl">http://urbanlabs.in/downloads/maps/</string>
+	
+	<string name="minStorageSizeMB">40</string>
+</resources>

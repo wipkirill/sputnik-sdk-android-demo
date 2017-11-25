@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/edit_name"
+              android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:layout_gravity="center" android:orientation="vertical" android:padding="15dp">
+
+    <TextView
+        android:id="@+id/cityToDownload" android:text="@string/cityToDownload"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/countryToDownload" android:text="@string/countryOfCity"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/fileSize" android:text="@string/fileSize"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

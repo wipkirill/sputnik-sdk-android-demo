@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="sputnik">#a895c7</color>
+	<string name="refresh">Refresh</string>
+    <string name="goToMap">Map</string>
+    <string name="searchHint">Search...</string>
+    <string name="action_about">About Sputnik</string>
+    <string name="sputnik_url">http://urbanlabs.in</string>
+
+    <string name="searchCityHint">City, location, ZIP</string>
+
+    <string name="sample_maps_list_url">http://urbanlabs.in/downloads/maps/cities.json</string>
+    <string name="recentMapsLabel">Cached maps</string>
+    <string name="downloadMapsLabel">Download sample maps</string>
+    <string name="noItemsLabel">No items</string>
+    <string name="cancelButton">Cancel</string>
+    <string name="okDownloadButton">OK, download</string>
+    <string name="downloadDialogTitle">Download the map for offline usage?</string>
+    <string name="cityToDownload">City: </string>
+    <string name="countryOfCity">Country: </string>
+    <string name="fileSize">Size: </string>
+    <string name="downloadFailed">Failed to download map file. Please try again later</string>
+    <string name="downloadComplete">Download complete</string>
+    <string name="downloadInProgress">Download in progress</string>
+    <string name="noInternetConnection">No Internet connection available, please try again later</string>
+
+    <string name="loadMapInProgress">Please wait...</string>
+    <string name="loadMapFailed">Failed to load map data</string>
+
+    <string name="tilesFeature">Map</string>
+    <string name="searchFeature">Search</string>
+    <string name="routingFeature">Routing</string>
+    <string name="addrDecoderFeature">Address</string>
+    <string name="gtfsFeature">Public transport</string>
+
+    <string name="splash_page_one_body">
+        Sputnik is a cross-platform library
+        for location-aware applications empowered by OpenStreetMap © data.
+    </string>
+    <string name="splash_page_two_body">
+        A friendly and simple API supports searching,
+        routing and rendering data extracted from OpenStreetMap.
+    </string>
+    <string name="splash_page_three_body">
+        We are working on a map data portal which will allow you
+        to download any areas to your mobile application in
+        order to use cached data offline.
+    </string>
+    <string name="splash_page_four_body">
+        Get started with some predefined maps. Download
+        some city extracts to test the Sputnik.
+    </string>
+    <string name="get_started_button">Get started</string>
+    <string name="sputnik_by_urbanlabs">Sputnik by UrbanLabs</string>
+</resources>

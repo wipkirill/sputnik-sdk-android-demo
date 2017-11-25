@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:padding="6dip">
+
+        <TextView style="@style/searchItemName"
+                  android:id="@+id/searchItemName"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical"
+                  android:layout_alignParentRight="true"
+                  android:layout_alignParentTop="true"
+                  android:paddingTop="5dp" android:singleLine="true"/>
+
+        <TextView style="@style/searchItemAddress"
+            android:id="@+id/addressView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/searchItemName"
+            android:layout_alignParentBottom="true"/>
+
+        <com.urbanlabs.ui.widget.TagItemContainer android:id="@+id/tagsContainer"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/searchItemName"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"/>
+
+        <com.urbanlabs.ui.widget.TagItemView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content" style="@style/tagItem"
+            android:layout_height="wrap_content"
+            android:id="@+id/tagItemElement" android:visibility="invisible"/>
+</RelativeLayout>

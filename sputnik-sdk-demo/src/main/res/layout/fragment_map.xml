@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:descendantFocusability="beforeDescendants"
+             android:focusableInTouchMode="true">
+    <com.urbanlabs.mapview.SputnikMapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:id="@+id/MapView"/>
+
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent">
+        <LinearLayout
+            android:paddingLeft="20dp" android:paddingRight="20dp" android:paddingTop="15dp"
+            android:layout_width="match_parent" android:orientation="vertical" android:layout_height="wrap_content">
+            <com.urbanlabs.ui.widget.ClearableEditText
+                    android:singleLine="true"
+                    android:drawableLeft="@android:drawable/ic_menu_search"
+                    android:background="@drawable/searchview_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/searchHint"
+                    android:id="@+id/searchTerm" android:paddingTop="3dp"
+                    android:paddingBottom="3dp"/>
+
+            <include layout="@layout/fragment_matched_tags"/>
+            <LinearLayout
+                android:orientation="vertical" android:background="@drawable/listview_shadow"
+                android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ListView
+                    android:listSelector="@drawable/list_selector_flatcolor"
+                    android:dividerHeight="1dp"
+                    android:divider="@color/list_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/listViewResults"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

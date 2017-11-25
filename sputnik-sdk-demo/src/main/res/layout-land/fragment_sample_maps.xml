@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:id="@+id/searchAreaContainer"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="0dp" android:layout_weight=".50"
+              android:layout_height="match_parent">
+    <LinearLayout style="@style/VerticalContainer">
+        <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".10"/>
+        <com.urbanlabs.ui.widget.ClearableEditText
+                        android:id="@+id/searchCity"
+                        android:singleLine="true"
+                        android:layout_width="0dp"
+                        android:layout_weight=".80"
+                        android:drawableLeft="@android:drawable/ic_menu_search"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/searchCityHint"
+                        android:paddingTop="3dp" android:paddingBottom="3dp"/>
+
+        <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".10"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout style="@style/VerticalContainer" android:layout_height="wrap_content">
+        <View
+
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".15"/>
+        <ProgressBar
+                   android:id="@+id/listViewProgress"
+                   android:layout_centerInParent="true"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:indeterminateOnly="true"
+                   android:visibility="gone"/>
+        <TextView
+                android:id="@+id/noItemsInListView"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/noItemsLabel"
+                android:visibility="gone"/>
+        <ListView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".70"
+                android:id="@+id/defaultCities"/>
+        <View
+
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".15"/>
+    </LinearLayout>
+
+</LinearLayout>
+

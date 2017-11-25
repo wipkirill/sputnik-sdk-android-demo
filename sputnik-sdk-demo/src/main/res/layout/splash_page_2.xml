@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/splash_padding_horizontal"
+    android:paddingRight="@dimen/splash_padding_horizontal"
+    android:paddingBottom="@dimen/splash_padding_vertical">
+
+<TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/splash_page_two_body"
+        style="@style/SplashBody" />
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip" >
+
+    <TextView
+        android:id="@+id/recentMapArea"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="Please wait..."
+        android:textSize="16sp" android:paddingTop="5dp"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/secondLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text=""
+        android:layout_below="@+id/recentMapArea"
+        android:layout_alignParentBottom="true"
+        android:textSize="12sp" android:paddingTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Size"
+        android:id="@+id/fileSize"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" android:textSize="12sp"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/corner"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/recentMapArea"
+        android:layout_alignEnd="@+id/recentMapArea" />
+
+
+</RelativeLayout> 

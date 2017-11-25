@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tags>
+    <!-- Some of OSM tags used for searching.
+Property hidden="true" means that this key is
+not shown directly while matching in tag cloud(see the Sputnik Demo app).
+Property "id" and "parent" allows to build hierarchy between tags.
+ -->
+    <!-- Amenity -->
+        <!-- Sustenance -->
+        <amenity hidden="true" id="1">amenity</amenity>
+        <bar parent="1">bar</bar>
+        <bbq parent="1">barbeque</bbq>
+        <biergarten parent="1">biergarten</biergarten>
+        <cafe parent="1">cafe</cafe>
+        <drinking_water parent="1">water for drinking</drinking_water>
+        <fast_food parent="1">fast food</fast_food>
+        <food_court parent="1">food court</food_court>
+        <ice_cream parent="1">ice cream</ice_cream>
+        <pub parent="1">pub</pub>
+        <restaurant parent="1">restaurant</restaurant>
+        <!-- Education -->
+        <college parent="1">college</college>
+        <kindergarten parent="1">kindergarten</kindergarten>
+        <library parent="1">library</library>
+        <public_bookcase parent="1">public bookcase</public_bookcase>
+        <school parent="1">school</school>
+        <university parent="1">university</university>
+        <!-- Transportation -->
+        <bicycle_parking parent="1">bicycle parking</bicycle_parking>
+        <bicycle_repair_station parent="1">bicycle repair station</bicycle_repair_station>
+        <bicycle_rental parent="1">bicycle rental</bicycle_rental>
+        <boat_sharing parent="1">boat sharing</boat_sharing>
+        <bus_station parent="1" canonical="5">bus station</bus_station>
+        <car_rental parent="1">car rental</car_rental>
+        <car_sharing parent="1">car sharing</car_sharing>
+        <car_wash parent="1">car wash</car_wash>
+        <charging_station parent="1">charging station</charging_station>
+        <ferry_terminal parent="1">ferry terminal</ferry_terminal>
+        <fuel parent="1">fuel</fuel>
+        <grit_bin parent="1">grit bin</grit_bin>
+        <parking parent="1">parking</parking>
+        <parking_entrance parent="1">parking entrance</parking_entrance>
+        <parking_space parent="1">parking space</parking_space>
+        <taxi parent="1">taxi</taxi>
+
+        <!-- Financial -->
+        <atm parent="1">ATM</atm>
+        <bank parent="1">bank</bank>
+        <bureau_de_change parent="1">currency exchange</bureau_de_change>
+        
+        <!-- Healthcare -->
+        <baby_hatch parent="1">baby hatch</baby_hatch>
+        <clinic parent="1">clinic</clinic>
+        <dentist parent="1">dentist</dentist>
+        <doctors parent="1">doctors</doctors>
+        <hospital parent="1">hospital</hospital>
+        <nursing_home parent="1">nursing home</nursing_home>
+        <pharmacy parent="1">pharmacy</pharmacy>
+        <social_facility parent="1">social facility</social_facility>
+        <veterinary parent="1">veterinary</veterinary>
+        
+        <!-- Entertainment, Arts & Culture -->
+        <arts_centre parent="1">arts centre</arts_centre>
+        <brothel parent="1">brothel</brothel>
+        <cinema parent="1">cinema</cinema>
+        <casino parent="1">casino</casino>
+        <community_centre parent="1">community centre</community_centre>
+        <fountain parent="1">fountain</fountain>
+        <gambling parent="1">gambling</gambling>
+        <nightclub parent="1">nightclub</nightclub>
+        <planetarium parent="1">planetarium</planetarium>
+        <social_centre parent="1">social centre</social_centre>
+        <stripclub parent="1">strip club</stripclub>
+        <studio parent="1">studio</studio>
+        <swingerclub parent="1">swingerclub</swingerclub>
+        <theatre parent="1">theatre</theatre>
+        
+        <!-- Others -->
+        <animal_boarding parent="1">animal boarding</animal_boarding>
+        <animal_shelter parent="1">animal shelter</animal_shelter>
+        <bench parent="1">bench</bench>
+        <clock parent="1">clock</clock>
+        <courthouse parent="1">courthouse</courthouse>
+        <coworking_space parent="1">coworking space</coworking_space>
+        <crematorium parent="1">crematorium</crematorium>
+        <crypt parent="1">crypt</crypt>
+        <dojo parent="1">dojo</dojo>
+        <embassy parent="1">embassy</embassy>
+        <fire_station parent="1">fire station</fire_station>
+        <grave_yard parent="1">grave yard</grave_yard>
+        <gym parent="1">gym</gym>
+        <hunting_stand parent="1">hunting stand</hunting_stand>
+        <game_feeding parent="1">game feeding</game_feeding>
+        <marketplace parent="1">marketplace</marketplace>
+        <photo_booth parent="1">photo booth</photo_booth>
+        <place_of_worship parent="1">place of worship</place_of_worship>
+        <police parent="1">police</police>
+        <post_box parent="1">post box</post_box>
+        <post_office parent="1">post office</post_office>
+        <prison parent="1">prison</prison>
+        <ranger_station parent="1">ranger station</ranger_station>
+        <reception_desk parent="1">reception desk</reception_desk>
+        <register_office parent="1">register office</register_office>
+        <recycling parent="1">recycling</recycling>
+        <rescue_station parent="1">rescue station</rescue_station>
+        <sauna parent="1">sauna</sauna>
+        <shelter parent="1">shelter</shelter>
+        <shower parent="1">shower</shower>
+        <telephone parent="1">telephone</telephone>
+        <toilets parent="1">toilets</toilets>
+        <townhall parent="1">townhall</townhall>
+        <vending_machine parent="1">vending machine</vending_machine>
+        <waste_disposal parent="1">waste disposal</waste_disposal>
+        <watering_place parent="1">watering place</watering_place>
+        <water_point parent="1">water point</water_point>
+        <!-- Building -->
+        <building hidden="true" id="2">building</building>
+        <apartments parent="2">apartments</apartments>
+        <farm parent="2">farm</farm>
+        <dormitory parent="2">dormitory</dormitory>
+        <hotel parent="2">hotel</hotel>
+        <house parent="2">house</house>
+        <detached parent="2">detached</detached>
+        <cathedral parent="2">cathedral</cathedral>
+        <chapel parent="2">chapel</chapel>
+        <church parent="2">church</church>
+        <stadium parent="2">stadium</stadium>
+        <train_station parent="2">train station</train_station>
+        <!-- Emergency -->
+        <emergency hidden="true" id="11">emergency</emergency>
+        <ambulance_station parent="11">ambulance station</ambulance_station>
+        <aed parent="11">an automated external defibrillator</aed>
+        <fire_extinguisher parent="11">fire extinguisher</fire_extinguisher>
+        <fire_hose parent="11">fire hose</fire_hose>
+        <fire_hydrant parent="11">fire hydrant</fire_hydrant>
+        <!-- Highway -->
+        <highway hidden="true" id="10">highway</highway>
+        <motorway parent="10">motorway</motorway>
+        <trunk parent="10">trunk</trunk>
+        <motorway_link parent="10">motorway link</motorway_link>
+        <primary parent="10">primary road</primary>
+        <secondary parent="10">secondary road</secondary>
+        <tertiary parent="10">tertiary road</tertiary>
+        <living_street parent="10">living street</living_street>
+        <pedestrian parent="10">pedestrian zone</pedestrian>
+        <residential parent="10">residential road</residential>
+        <steps parent="10">steps</steps>
+        <bus_stop parent="10" canonical="5">bus stop</bus_stop>
+        <!-- Leisure -->
+        <leisure id="3" hidden="true">leisure</leisure>
+        <beach_resort parent="3">beach resort</beach_resort>
+        <dog_park parent="3">dog park</dog_park>
+        <park parent="3">park</park>
+        <pitch parent="3">pitch</pitch>
+        <track parent="3">track</track>
+        <playground parent="3">playground</playground>
+        <sports_centre parent="3">sports centre</sports_centre>
+        <stadium parent="3">stadium</stadium>
+        <swimming_pool parent="3">swimming pool</swimming_pool>
+        <water_park parent="3">water park</water_park>
+        <!-- Office -->
+        <office id="9">office</office>
+        <accountant parent="9">accountant</accountant>
+        <administrative parent="9">administrative</administrative>
+        <architect parent="9">architect</architect>
+        <camping parent="9">camping</camping>
+        <company parent="9">company</company>
+        <educational_institution parent="9">educational institution</educational_institution>
+        <employment_agency parent="9">employment agency</employment_agency>
+        <estate_agent parent="9">estate agent</estate_agent>
+        <foundation parent="9">foundation</foundation>
+        <government parent="9">government</government>
+        <insurance parent="9">insurance</insurance>
+        <it parent="9">it</it>
+        <lawyer parent="9">lawyer</lawyer>
+        <newspaper parent="9">newspaper</newspaper>
+        <ngo parent="9">ngo</ngo>
+        <political_party parent="9">political party</political_party>
+        <quango parent="9">quango</quango>
+        <realtor parent="9">realtor</realtor>
+        <research parent="9">research</research>
+        <telecommunication parent="9">telecommunication</telecommunication>
+        <travel_agent parent="9">travel agent</travel_agent>
+        <!-- Places -->
+        <place id="4">place</place>
+        <country id="4">country</country>
+        <province parent="4">province</province>
+        <district parent="4">district</district>
+        <city parent="4">city</city>
+        <town parent="4">town</town>
+        <village parent="4">village</village>
+        <suburb parent="4">suburb</suburb>
+        <neighborhood parent="4">neighborhood</neighborhood>
+        <hamlet parent="4">hamlet</hamlet>
+        <street parent="4">street</street>
+        <zip parent="4">zip</zip>
+        <!-- Public transport -->
+        <public_transport id="5">public transport</public_transport>
+        <platform parent="5">platform</platform>
+        <station parent="5">station</station>
+        <stop_position parent="5">stop position</stop_position>
+        <railway parent="5">railway</railway>
+        <subway parent="5">subway</subway>
+        <tram parent="5">tram</tram>
+        <halt parent="5">halt</halt>
+        <stop parent="5">stop</stop>
+        <subway_entrance parent="5">subway entrance</subway_entrance>
+
+        <!-- Shop -->
+        <shop hidden="false" id="6">shop</shop>
+        <alcohol parent="6">alcohol</alcohol>
+        <bakery parent="6">bakery</bakery>
+        <beverages parent="6">beverages</beverages>
+        <butcher parent="6">butcher</butcher>
+        <confectionery parent="6">confectionery</confectionery>
+        <convenience parent="6">convenience</convenience>
+        <deli parent="6">delicatessen</deli>
+        <farm parent="6">farm</farm>
+        <greengrocer parent="6">greengrocer</greengrocer>
+        <organic parent="6">organic</organic>
+        <seafood parent="6">seafood</seafood>
+        <fish parent="6">fish</fish>
+        <department_store parent="6">department store</department_store>
+        <general parent="6">general</general>
+        <kiosk parent="6">kiosk</kiosk>
+        <mall parent="6">mall</mall>
+        <supermarket parent="6">supermarket</supermarket>
+        <baby_goods parent="6">baby goods</baby_goods>
+        <bag parent="6">bags</bag>
+        <boutique parent="6">boutique</boutique>
+        <clothes parent="6">clothes</clothes>
+        <fabric parent="6">fabric</fabric>
+        <jewelry parent="6">jewelry</jewelry>
+        <shoes parent="6">shoes</shoes>
+        <charity parent="6">charity</charity>
+        <second_hand parent="6">second hand</second_hand>
+        <variety_store parent="6">variety store</variety_store>
+        <beauty parent="6">beauty</beauty>
+        <chemist parent="6">chemist</chemist>
+        <erotic parent="6">erotic</erotic>
+        <hairdresser parent="6">hairdresser</hairdresser>
+        <hearing_aids parent="6">hearing aids</hearing_aids>
+        <herbalist parent="6">herbalist</herbalist>
+        <massage parent="6">massage</massage>
+        <optician parent="6">optician</optician>
+        <tattoo parent="6">tattoo</tattoo>
+        <bathroom_furnishing parent="6">bathroom furnishing</bathroom_furnishing>
+        <doityourself parent="6">Do it yourself</doityourself>
+        <florist parent="6">florist</florist>
+        <furnace parent="6">furnace</furnace>
+        <garden_centre parent="6">garden centre</garden_centre>
+        <gas parent="6">gas</gas>
+        <glaziery parent="6">glaziery</glaziery>
+        <hardware parent="6">hardware</hardware>
+        <paint parent="6">paint</paint>
+        <antiques parent="6">antiques</antiques>
+        <bed parent="6">bed</bed>
+        <carpet parent="6">carpet</carpet>
+        <curtain parent="6">curtain</curtain>
+        <furniture parent="6">furniture</furniture>
+        <interior_decoration parent="6">interior decoration</interior_decoration>
+        <kitchen parent="6">kitchen</kitchen>
+        <window_blind parent="6">window blind</window_blind>
+        <computer parent="6">computer</computer>
+        <electronics parent="6">electronics</electronics>
+        <hifi parent="6">hifi</hifi>
+        <mobile_phone parent="6">mobile phone</mobile_phone>
+        <radiotechnics parent="6">radiotechnics</radiotechnics>
+        <vacuum_cleaner parent="6">vacuum cleaner</vacuum_cleaner>
+        <video parent="6">video</video>
+        <bicycle parent="6">bicycle</bicycle>
+        <car parent="6">car</car>
+        <car_repair parent="6">car repair</car_repair>
+        <car_parts parent="6">car parts</car_parts>
+        <dive parent="6">dive</dive>
+        <hunting parent="6">hunting</hunting>
+        <motorcycle parent="6">motorcycle</motorcycle>
+        <outdoor parent="6">outdoor</outdoor>
+        <sports parent="6">sports</sports>
+        <art parent="6">art</art>
+        <frame parent="6">frame</frame>
+        <musical_instrument parent="6">musical instrument</musical_instrument>
+        <anime parent="6">anime</anime>
+        <books parent="6">books</books>
+        <gift parent="6">gift</gift>
+        <newsagent parent="6">newsagent</newsagent>
+        <stationery parent="6">stationery</stationery>
+        <ticket parent="6">ticket</ticket>
+        <copyshop parent="6">copyshop</copyshop>
+        <dry_cleaning parent="6">dry cleaning</dry_cleaning>
+        <funeral_directors parent="6">funeral directors</funeral_directors>
+        <laundry parent="6">laundry</laundry>
+        <money_lender parent="6">money lender</money_lender>
+        <pawnbroker parent="6">pawnbroker</pawnbroker>
+        <pet parent="6">pet</pet>
+        <tobacco parent="6">tobacco</tobacco>
+        <toys parent="6">toys</toys>
+        <trade parent="6">trade</trade>
+        <vacant parent="6">vacant</vacant>
+        <!-- Sport -->
+        <sport id="7">sport</sport>
+        <_9pin parent="7">9pin</_9pin>
+        <_10pin parent="7">10pin</_10pin>
+        <american_football parent="7">american football</american_football>
+        <archery parent="7">archery</archery>
+        <athletics parent="7">athletics</athletics>
+        <australian_football parent="7">australian football</australian_football>
+        <base parent="7">base</base>
+        <badminton parent="7">badminton</badminton>
+        <baseball parent="7">baseball</baseball>
+        <basketball parent="7">basketball</basketball>
+        <beachvolleyball parent="7">beachvolleyball</beachvolleyball>
+        <bmx parent="7">bmx</bmx>
+        <boules parent="7">boules</boules>
+        <bowls parent="7">bowls</bowls>
+        <boxing parent="7">boxing</boxing>
+        <canadian_football parent="7">canadian football</canadian_football>
+        <canoe parent="7">canoe</canoe>
+        <chess parent="7">chess</chess>
+        <climbing parent="7">climbing</climbing>
+        <cricket parent="7">cricket</cricket>
+        <cricket_nets parent="7">cricket nets</cricket_nets>
+        <croquet parent="7">croquet</croquet>
+        <cycling parent="7">cycling</cycling>
+        <diving parent="7">diving</diving>
+        <dog_racing parent="7">dog racing</dog_racing>
+        <fencing parent="7">fencing</fencing>
+        <equestrian parent="7">equestrian</equestrian>
+        <free_flying parent="7">free flying</free_flying>
+        <gaelic_games parent="7">gaelic games</gaelic_games>
+        <golf parent="7">golf</golf>
+        <gymnastics parent="7">gymnastics</gymnastics>
+        <hockey parent="7">hockey</hockey>
+        <horseshoes parent="7">horseshoes</horseshoes>
+        <horse_racing parent="7">horse racing</horse_racing>
+        <ice_stock parent="7">ice stock</ice_stock>
+        <judo parent="7">judo</judo>
+        <karting parent="7">karting</karting>
+        <korfball parent="7">korfball</korfball>
+        <motor parent="7">motor</motor>
+        <orienteering parent="7">orienteering</orienteering>
+        <paddle_tennis parent="7">paddle tennis</paddle_tennis>
+        <paragliding parent="7">paragliding</paragliding>
+        <pelota parent="7">pelota</pelota>
+        <racquet parent="7">racquet</racquet>
+        <rowing parent="7">rowing</rowing>
+        <rugby_league parent="7">rugby league</rugby_league>
+        <rugby_union parent="7">rugby union</rugby_union>
+        <running parent="7">running</running>
+        <scuba_diving parent="7">scuba diving</scuba_diving>
+        <shooting parent="7">shooting</shooting>
+        <skating parent="7">skating</skating>
+        <skateboard parent="7">skateboard</skateboard>
+        <skiing parent="7">skiing</skiing>
+        <soccer parent="7">soccer</soccer>
+        <surfing parent="7">surfing</surfing>
+        <swimming parent="7">swimming</swimming>
+        <table_tennis parent="7">table tennis</table_tennis>
+        <taekwondo parent="7">taekwondo</taekwondo>
+        <team_handball parent="7">team handball</team_handball>
+        <tennis parent="7">tennis</tennis>
+        <toboggan parent="7">toboggan</toboggan>
+        <volleyball parent="7">volleyball</volleyball>
+        <water_ski parent="7">water ski</water_ski>
+        <weightlifting parent="7">weightlifting</weightlifting>
+        <wrestling parent="7">wrestling</wrestling>
+        <!-- Tourism -->
+        <tourism id="8">tourism</tourism>
+        <attraction parent="8">attraction</attraction>
+        <artwork parent="8">artwork</artwork>
+        <camp_site parent="8">camp site</camp_site>
+        <caravan_site parent="8">caravan site</caravan_site>
+        <chalet parent="8">chalet</chalet>
+        <guest_house parent="8">guest house</guest_house>
+        <hostel parent="8">hostel</hostel>
+        <hotel parent="8">hotel</hotel>
+        <information parent="8">information</information>
+        <motel parent="8">motel</motel>
+        <museum parent="8">museum</museum>
+        <picnic_site parent="8">picnic site</picnic_site>
+        <theme_park parent="8">theme park</theme_park>
+        <viewpoint parent="8">viewpoint</viewpoint>
+        <wilderness_hut parent="8">wilderness hut</wilderness_hut>
+        <zoo parent="8">zoo</zoo>
+</tags>
