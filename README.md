@@ -11,9 +11,9 @@ The location-aware platform provides a complete solution for your mobile applica
 
 Pic. 1 | Pic. 2
 ------------ | -------------
-![Im1](https://raw.githubusercontent.com/urban-labs/sputnik-sdk-android-demo/master/images/device-2015-03-09-130106.png) | ![Im2](https://raw.githubusercontent.com/urban-labs/sputnik-sdk-android-demo/master/images//device-2015-03-09-130138.png) |
+![Im1](https://raw.githubusercontent.com/wipkirill/sputnik-sdk-android-demo/master/images/device-2015-03-09-130106.png) | ![Im2](https://raw.githubusercontent.com/wipkirill/sputnik-sdk-android-demo/master/images//device-2015-03-09-130138.png) |
 Pic. 3 | Pic. 4
-![Im2](https://raw.githubusercontent.com/urban-labs/sputnik-sdk-android-demo/master/images//device-2015-03-09-130206.png) | ![Im2](https://raw.githubusercontent.com/urban-labs/sputnik-sdk-android-demo/master/images//device-2015-03-09-130251.png)
+![Im2](https://raw.githubusercontent.com/wipkirill/sputnik-sdk-android-demo/master/images//device-2015-03-09-130206.png) | ![Im2](https://raw.githubusercontent.com/wipkirill/sputnik-sdk-android-demo/master/images//device-2015-03-09-130251.png)
 
 
 ## Introduction
